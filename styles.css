@@ -1,0 +1,256 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2a2a2a;
+    border-bottom: 2px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.title {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.nav-link {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+}
+
+/* Sections */
+.section {
+    padding: 3rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2a2a2a;
+}
+
+.icon {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #ff6f61;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #121212);
+    color: #f1f1f1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #2a2a40, #1f1f1f);
+    border-bottom: 2px solid #333;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Sections */
+.section {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #2a2a40, #1f1f1f);
+}
+
+.icon {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.icon:hover {
+    color: #0f0;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .icon {
+        font-size: 0.9rem;
+    }
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #121212, #1e1e2f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+.loading-content {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem auto;
+}
+
+.loading-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
