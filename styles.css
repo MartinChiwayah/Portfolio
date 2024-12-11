@@ -51,10 +51,9 @@ body {
 
 /* Footer */
 .footer {
-    padding: 2rem;
-    background: linear-gradient(120deg, #0f0f0f, #1a1a1a);
     text-align: center;
-    color: #ffffff;
+    padding: 1rem;
+    background: linear-gradient(90deg, #2a2a40, #1f1f1f);
 }
 
 .icon {
